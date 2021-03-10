@@ -10,4 +10,4 @@ wget https://raw.githubusercontent.com/THEALIFHAKER1/AE1-USERBOT/main/terminal_g
 ##Host
 
 Deploy to Heroku:
-<p align="left"><a href="https://heroku.com/deploy?template=https://github.com/HafizZiq/NFS-Gang/tree/master"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
+<p align="left"><a href="https://heroku.com/deploy?template=https://github.com/THEALIFHAKER1/AE1-USERBOT/main"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
