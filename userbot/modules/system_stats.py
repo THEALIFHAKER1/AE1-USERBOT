@@ -1,11 +1,4 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.d (the "License");
-# you may not use this file except in compliance with the License.
-#
-""" Userbot module for getting information about the server. """
-
-import platform
+#import platform
 import sys
 import time
 from asyncio import create_subprocess_exec as asyncrunapp
@@ -235,16 +228,16 @@ async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     uptime = await get_readable_time((time.time() - StartTime))
     output = ("`Bot services is running...`\n"
-              "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶⊶⊶⊶⊶⊶`\n"
+              "`----------------------------------`\n"
               f"•  ⚙️ `Telethon       : v{version.__version__}`\n"
               f"•  🐍 `Python         : v{python_version()}`\n"
               f"•  👤 `User           : `{DEFAULTUSER} \n"
               "`----------------------------------`\n"
               f"•  💻 `Running on     : {repo.active_branch.name}`\n"
               f"•  🗃 `Loaded modules : {len(modules)}`\n"
-              f"•  🧸 `NFS Gang       : v{USERBOT_VERSION}`\n"
+              f"•  🧸 `AE1 USERBOT    : v{USERBOT_VERSION}`\n"
               f"•  🕒 `Bot Uptime     : {uptime} `\n"
-              "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶⊶⊶⊶⊶⊶`")
+              "`----------------------------------`")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
