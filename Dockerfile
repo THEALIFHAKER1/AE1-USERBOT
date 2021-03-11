@@ -4,7 +4,7 @@ RUN mkdir /AE1USERBOT && chmod 777 /AE1USERBOT
 ENV PATH="/AE1/bin:$PATH"
 WORKDIR /AE1USERBOT
 
-RUN git clone https://github.com/THEALIFHAKER1/AE1-USERBOT -b master /AE1USERBOT
+RUN git clone https://github.com/THEALIFHAKER1/AE1-USERBOT -b main /AE1USERBOT
 
 #
 # Make open port TCP
