@@ -716,34 +716,6 @@ async def WooMai(netase):
                                         [msg.id, response.id, respond.id])
     await netase.delete()
 
-
-@register(outgoing=True, pattern="^.sdd(?: |$)(.*)")
-async def DeezLoader(Deezlod):
-    if Deezlod.fwd_from:
-        return
-    d_link = Deezlod.pattern_match.group(1)
-    if ".com" not in d_link:
-        await Deezlod.edit("` I need a link to download something pro.`**(._.)**")
-        return
-    else:
-        await Deezlod.edit("**Initiating Download!**")
-    chat = "@DeezLoadBot"
-    async with bot.conversation(chat) as conv:
-        try:
-            msg = await conv.send_message(d_link)
-            details = await conv.get_response()
-            song = await conv.get_response()
-            """ - don't spam notif - """
-            await bot.send_read_acknowledge(conv.chat_id)
-        except YouBlockedUserError:
-            await Deezlod.edit("**Error:** `unblock` @DeezLoadBot `and retry!`")
-            return
-        await bot.send_file(Deezlod.chat_id, song, caption=details.text)
-        await Deezlod.client.delete_messages(conv.chat_id,
-                                             [msg.id, details.id, song.id])
-        await Deezlod.delete()
-
-
 @register(outgoing=True, pattern="^.smd(?: |$)(.*)")
 async def SpoMusDown(TifyDown):
     if TifyDown.fwd_from:
