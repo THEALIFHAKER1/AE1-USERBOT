@@ -8,7 +8,6 @@ coffeehouse
 covid
 cryptg
 dnspython
-deezloader
 emoji
 gitpython
 glitch_this
