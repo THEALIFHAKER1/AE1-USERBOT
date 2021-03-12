@@ -65,9 +65,6 @@ API_HASH = os.environ.get("API_HASH") or None
 # Userbot Session String
 STRING_SESSION = os.environ.get("STRING_SESSION") or None
 
-# Deezloader
-DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN") or None
-
 # Logging channel/group ID configuration.
 BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID") or 0)
 
@@ -146,7 +143,7 @@ COUNTRY = str(os.environ.get("COUNTRY") or "")
 TZ_NUMBER = int(os.environ.get("TZ_NUMBER") or 1)
 
 # Version of NFS-Gang
-USERBOT_VERSION = os.environ.get("USERBOT_VERSION") or "1.5"
+USERBOT_VERSION = os.environ.get("USERBOT_VERSION") or "1.1"
 
 # User Terminal alias
 USER_TERM_ALIAS = os.environ.get("USER_TERM_ALIAS") or "NFS-Gang"
